@@ -48,7 +48,7 @@
 
 ## AS
 
-= Auto Scaling will throw an error since if there is a conflict in the schedule of two separate Auto Scaling Processes.
+- Auto Scaling will throw an error since if there is a conflict in the schedule of two separate Auto Scaling Processes.
 
 ## ELB
 
