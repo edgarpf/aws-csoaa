@@ -6,6 +6,8 @@
 
 ## VPC
 
+- You can expand your existing VPC by adding four (4) secondary IPv4 IP ranges (CIDRs) to your VPC.
+
 - In AWS , when you try to delete a subnet which has instances it will not allow to delete it. 
 
 - When you create a security group , by default all Outbound rules will be allowed.
@@ -36,9 +38,13 @@
 
 - As per the AWS documentation, by default, the EBS Snapshots limit is 10000.
 
+- PIOPS does not support a size higher than 16384GiB.
+
 ## S3
 
 - You can use the S3 storage analytics to see storage patterns.
+
+- It is not possible to give access to an IAM user using ACL.
 
 - Objects are directly accessible via a URL.
 
@@ -49,6 +55,8 @@
 ## AS
 
 - Auto Scaling will throw an error since if there is a conflict in the schedule of two separate Auto Scaling Processes.
+
+- If you suspend the terminate process, there is a chance that the instances can grow more than the maximum size due to AZRebalance.
 
 ## ELB
 
@@ -64,6 +72,9 @@
 
 - When you go to the Event dashboard in RDS, you can actually create event subscriptions based on Security groups.
 
+- MultiAZ is supported for MySQL, MariaDb, Oracle and PostgreSQL. With Microsoft SQL server, you need to use the native mirroring to achieve High Availability.
+
+- When you have an Event subscription, you can simply disable it by de-selecting on the Enabled option.
 
 ## IAM
 
@@ -84,11 +95,17 @@
  
  - The user can set the alarm state to ‘Alarm’ using CLI to simulate alarms.
  
- -  The user can use the copy URL functionality of CloudWatch to share the exact details.
+ - Detailed monitoring is by default enabled for ELB for certain metrics with no additional charge.
+ 
+ - The user can use the copy URL functionality of CloudWatch to share the exact details.
+ 
+ - Using the PutMetricData APIs the size of a request is limited to 8KB for HTTP GET requests and 40KB for HTTP POST requests.
  
  - As per AWS documentation when u enable Auto Scaling via CLI the detailed monitoring will be enabled.
  
  - When you create an ALARM, you have the option to add a notification as well. So the SNS service can be used to trigger a service which can then be used to trigger an instance in the private cloud.
+ 
+ - The cloudwatch metrics for EMR is 5 minutes and cannot be configured beyond this.
  
  -  Ensure to go to Preferences in AWS and ensure that “Receive Billing Alerts” is enabled. Only then will you be able to define Clodwatch alarms on billing.
  
@@ -101,3 +118,7 @@
 - As per the AWS documentation it clearly mentions that the default setting for message retention is 4 days.
 
 - The SQS endpoint normally has the format of URL: https://sqs.AZ.amazonaws.com/ResourceID/Queuename.
+
+## SNS
+
+- SNS cannot provide data every minute.
