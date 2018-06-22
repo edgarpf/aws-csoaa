@@ -92,6 +92,8 @@
 
 - The patching or changes are first done to the standby instance. Once done, the standby will be promoted to the primary and then the patching is done on the primary.
 
+- Read replicas can be created from a read replica of another read replica. 
+
 - The maintenance window is only for scale operations or security patching.
 
 - When you go to the Event dashboard in RDS, you can actually create event subscriptions based on Security groups.
