@@ -4,6 +4,8 @@
 
 - As per the AWS documentation for billing purposes, AWS treats all the accounts on the consolidated bill as if they were one account.
 
+- When you work as a company with AWS, you will normally get an AWS representative. That representative will allow you carry out audits with third party vendors.
+
 ## VPC
 
 - When you delete an instance the elastic network interface which in the below example of eth0 will also be deleted.
@@ -86,9 +88,15 @@
 
 -  SSL Protocols, SSL Ciphers and Server Order Preference are all part of the pre-defined policies.
 
+- You can create a load balancer that uses the SSL/TLS protocol for encrypted connections (also known as SSL offload). This feature enables traffic encryption between your load balancer and the clients that initiate HTTPS sessions, and for connections between your load balancer and your EC2 instances.
+
 ## RDS
 
 - The CNAME is changed to the standby DB when the primary one fails.
+
+- The maximum retention period for automated backups are 35 days. All automated backups are deleted when you delete a DB instance. After you delete a DB instance, the automated backups can't be recovered.
+
+- You can use Oracle GoldenGate with Amazon RDS for Active-Active database replication, zero-downtime migration and upgrades, disaster recovery, data protection, and in-region and cross-region replication.
 
 - The patching or changes are first done to the standby instance. Once done, the standby will be promoted to the primary and then the patching is done on the primary.
 
@@ -119,6 +127,8 @@
 ## AWS Cloud formation
 
 - The resources section is required by the CloudFormation template.
+
+- You can customize your AWS deployments using JSON templates in CloudFormation.
 
 - You can use a wait condition for situations like the following:
 
@@ -162,3 +172,11 @@
 ## SNS
 
 - SNS cannot provide data every minute.
+
+## OpsWorks
+
+- You can customize your AWS deployments using JSON templates in OpsWorks.
+
+## Route 53
+
+- The Dynamic Host Configuration Protocol (DHCP) provides a standard for passing configuration information to hosts on a TCP/IP network. The options field of a DHCP message contains the configuration parameters. 
