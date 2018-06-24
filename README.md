@@ -28,6 +28,8 @@
 
 - You get charged for EC2 instances only when the instances are in a running state.
 
+- The user can the set DisableApiTermination attribute to avoid accidental termination.
+
 - You need to ensure you are entering the right user name if you get the error "Host key not found".
 
 - The private key file has the wrong file permission if you get an Unprotected Private Key File error
@@ -49,6 +51,8 @@
 - As per the AWS documentation, by default, the EBS Snapshots limit is 10000.
 
 - PIOPS does not support a size higher than 16384GiB.
+
+- A placement group is a logical grouping of instances within a single Availability Zone. Placement groups are recommended for applications that benefit from low network latency, high network throughput, or both. To provide the lowest latency, and the highest packet-per-second network performance for your placement group, choose an instance type that supports enhanced networking.
 
 - if you get the 'InsufficientInstanceCapacity' error that means AWS does not have sufficient capacity in that availability zone
 
@@ -114,7 +118,15 @@
 
 - It is not possible to have the same login ID for multiple IAM users of the same account.
 
+- IAM user can be a part of maximum 10 groups.
+
+- One AWS account can have a maximum of 5000 IAM users.
+
+- The organization can create 100 groups per AWS account.
+
 - You can create an IAM policy with a condition which denies access when the IP address range is not from the organization.
+
+- One AWS account can have 250 roles.
 
 - Usernames can be a combination of up to 64 letters, digits, and these characters: plus (+), equal (=), comma (,), period (.), at sign (@), and hyphen (-). Names must be unique within an account. They are not distinguished by case.
 
@@ -164,6 +176,8 @@
  ## SQS
  
  - SQS messages does not guarantee the order of messages. So in order to do this, you need to add the sequencing information in each message itself.
+
+- AWS reserve the right to delete a queue without notification if one of the following actions hasn't been performed on it for 30 consecutive days: SendMessage, ReceiveMessage, DeleteMessage, GetQueueAttributes, SetQueueAttributes, AddPermission, and RemovePermission.
 
 - As per the AWS documentation it clearly mentions that the default setting for message retention is 4 days.
 
