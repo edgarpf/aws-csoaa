@@ -60,4 +60,20 @@
 * Cached volumes are only used when you want to store your primary data in Amazon S3 while retaining your frequently accessed data locally in the cache for low latency access.
 * When you create a stack, no stack policy is set, so all update actions are allowed on all resources. To protect stack resources from update actions, define a stack policy and then set it on your stack.
 * After the tag is activated, AWS starts applying the tag to resources that are created after the AWS-generated tag was activated. The AWS-generated tags are available only in the Billing and Cost Management console and reports, and doesn’t appear anywhere else in the AWS console, including the AWS Tag Editor. The createdBy tag does not count towards your tags per resource limit.
-* 
+* Amazon RDS Proxy is a fully managed, highly available database proxy for Amazon Relational Database Service (RDS) that makes applications more scalable, more resilient to database failures, and more secure.
+* AWS Artifact is your go-to central resource for compliance-related information that matters to you. It provides on-demand access to AWS’ security and compliance reports and select online agreements.
+* To create an active-passive failover configuration with one primary record and one secondary record, you just create the records and specify Failover for the routing policy. When the primary resource is healthy, Route 53 responds to DNS queries using the primary record. When the primary resource is unhealthy, Route 53 responds to DNS queries using the secondary record.
+* Provisioned IOPS SSD volumes utilize solid-state drives (SSDs) and are best suited for high-performance Amazon EBS storage volumes.
+* AWS Personal Health Dashboard provides alerts and remediation guidance when AWS is experiencing events that may impact you. While the Service Health Dashboard displays the general status of AWS services, Personal Health Dashboard gives you a personalized view into the performance and availability of the AWS services underlying your AWS resources.
+* You need to set the “Evaluate Target Health” flag to true on Route 53. This way, Route 53 will check both ALB entry to ensure that your ALBs are responding. Route 53 will then decide to which ALB it will direct the user. If one region goes down, Route 53 will know it via the “Evaluate Target Health” setting and will not redirect users to that region’s ALB.
+* Amazon S3 Transfer Acceleration is a bucket-level feature that enables fast, easy, and secure transfers of files over long distances between your client and an S3 bucket. Transfer Acceleration takes advantage of the globally distributed edge locations in Amazon CloudFront. As the data arrives at an edge location, the data is routed to Amazon S3 over an optimized network path.
+* A stack goes into the UPDATE_ROLLBACK_FAILED state when AWS CloudFormation cannot roll back all changes during an update. To resolve this problem, you must fix the error that causes the update rollback to fail and continue to roll back your stack.
+* To increase database security, we recommend that you use AWS Secrets Manager instead of environment variables to store database credentials.
+* If your EC2 instance goes from the pending state to the terminated state immediately after restarting then it could be caused by one of the following reasons:
+  * You’ve reached your EBS volume limit.
+  * An EBS snapshot is corrupt.
+  * The root EBS volume is encrypted and you do not have permissions to access the KMS key for decryption.
+  * The instance store-backed AMI that you used to launch the instance is missing a required part (an image.part.xx file).
+* Popular Objects Report can determine what objects are frequently being accessed and get statistics on those objects. Usage Reports tells you the number of HTTP and HTTPS requests that CloudFront responds to from edge locations in selected regions. Viewers Reports can determine the locations of the viewers that access your content most frequently.
+* CloudFormation service will automatically rollback the stack in the event of failures.
+* In AWS Cost and Usage reports, you can choose to have AWS publish billing reports to an Amazon Simple Storage Service (Amazon S3) bucket that you own.
