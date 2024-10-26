@@ -77,3 +77,10 @@
 * Popular Objects Report can determine what objects are frequently being accessed and get statistics on those objects. Usage Reports tells you the number of HTTP and HTTPS requests that CloudFront responds to from edge locations in selected regions. Viewers Reports can determine the locations of the viewers that access your content most frequently.
 * CloudFormation service will automatically rollback the stack in the event of failures.
 * In AWS Cost and Usage reports, you can choose to have AWS publish billing reports to an Amazon Simple Storage Service (Amazon S3) bucket that you own.
+* To meet your connectivity and workload requirements, Aurora Auto Scaling dynamically adjusts the number of Aurora Replicas provisioned for an Aurora DB cluster.
+* With step scaling policies, you can specify the number of seconds that it takes for a newly launched instance to warm up. Until its specified warm-up time has expired, an instance is not counted toward the aggregated metrics of the Auto Scaling group. While scaling out, AWS also does not consider instances that are warming up as part of the current capacity of the group.
+* Amazon Web Services (AWS) monitors the health of each EC2 instance with two status checks. An EC2 instance becomes unreachable if a status check fails. A system status check failure indicates a problem with the AWS systems that your instance runs on. When a problem with an underlying host impacts your production, you can stop and start your instance to migrate from the underlying host.
+* To route domain traffic to an ELB load balancer, use Amazon Route 53 to create an alias record that points to your load balancer.
+* In a VPC, the first four IP addresses and the last IP address in each subnet CIDR block are not available for you to use, and cannot be assigned to an instance.
+* The cfn-init helper script it interprets the metadata that contains the sources, packages, files, and services.
+* EC2Rescue can help you diagnose and troubleshoot problems on Amazon EC2 Linux and Windows Server instances.
