@@ -69,11 +69,6 @@
 * Amazon S3 Transfer Acceleration is a bucket-level feature that enables fast, easy, and secure transfers of files over long distances between your client and an S3 bucket. Transfer Acceleration takes advantage of the globally distributed edge locations in Amazon CloudFront. As the data arrives at an edge location, the data is routed to Amazon S3 over an optimized network path.
 * A stack goes into the UPDATE_ROLLBACK_FAILED state when AWS CloudFormation cannot roll back all changes during an update. To resolve this problem, you must fix the error that causes the update rollback to fail and continue to roll back your stack.
 * To increase database security, we recommend that you use AWS Secrets Manager instead of environment variables to store database credentials.
-* If your EC2 instance goes from the pending state to the terminated state immediately after restarting then it could be caused by one of the following reasons:
-  * You’ve reached your EBS volume limit.
-  * An EBS snapshot is corrupt.
-  * The root EBS volume is encrypted and you do not have permissions to access the KMS key for decryption.
-  * The instance store-backed AMI that you used to launch the instance is missing a required part (an image.part.xx file).
 * Popular Objects Report can determine what objects are frequently being accessed and get statistics on those objects. Usage Reports tells you the number of HTTP and HTTPS requests that CloudFront responds to from edge locations in selected regions. Viewers Reports can determine the locations of the viewers that access your content most frequently.
 * CloudFormation service will automatically rollback the stack in the event of failures.
 * In AWS Cost and Usage reports, you can choose to have AWS publish billing reports to an Amazon Simple Storage Service (Amazon S3) bucket that you own.
